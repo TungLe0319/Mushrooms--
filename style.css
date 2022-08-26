@@ -1,3 +1,8 @@
+*{
+  font-family: 'Oswald', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+}
+
 .hero-image{
   
   height: 60vh;
@@ -45,8 +50,26 @@
 }
 
 
-@media screen AND (max-height:768px) {
+@media screen AND (max-width:768px) {
   .mobile-hide{
     display: none;
   }
+
+  .over-spill{
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  
 }
+/* ANCHOR FIXES SCREEN OVERFLOW ON MOBILE */
+ @media screen AND (max-width:1200px){
+  .over-spill{
+    position: static;
+    top: 0;
+    left: 0;
+    
+    
+  }
+  
+ }
