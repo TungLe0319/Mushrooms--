@@ -5,13 +5,18 @@
 :root{
   --primary:#fba41a;
 }
+
+
+
+
+
 .gold{
   background-color: var(--primary);
 }
 
 .gray-scale:hover{
-  transform: scale(1.05);
-  filter: grayscale(100%);
+  transform: scale(1.025);
+  
   transition: all 0.25s  ease-in;
  
 }
@@ -30,26 +35,6 @@
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed; 
 }
-.hero-image-2{
-  /* ANCHOR test fit-content implace of 80vh */
-  height: fit-content;
-  /* always scale the image to the appropriate size of your screen */
-  background-size: cover;
-  background-image: url(https://images6.alphacoders.com/110/1106343.jpg);
-  background-position: center;
-  /* keeps the image fixed while scrolling , neat effect. */
-  background-attachment: fixed; 
-}
-.hero-image-3{
-
-  height: fit-content;
-  /* always scale the image to the appropriate size of your screen */
-  background-size: cover;
-  background-image: url(https://images6.alphacoders.com/110/1106343.jpg);
-  background-position: center;
-  /* keeps the image fixed while scrolling , neat effect. */
-  background-attachment: fixed; 
-}
 
  
 .over-spill{
@@ -58,13 +43,97 @@
   left: 625px;
 }
 
-.fs-custom{
-  font-size: 60px;
+
+
+
+.jane-doe:hover{
+  filter: brightness(80%);
+  transition: all 0.5s ease;
+}
+
+/* #region ANCHOR SECTION 4 img-wrapper */
+
+
+
+.img-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+object-fit: cover;
+background-position: center;
+
+}
+.img-wrapper > .content:hover {
+ backdrop-filter: blur(1rem);
+ 
+
+}
+
+
+.img-wrapper > .content{
+position: absolute;
+inset: 0;
+background: rgba(49, 49, 49, 0.4);
+}
+
+.img-wrapper, .img-wrapper > .content{
+transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content.fade{
+  opacity: 0;
+}
+.img-wrapper:hover > .content.fade{
+  opacity: 1;
+}
+
+.img-wrapper > .content.slide-left{
+  transform: translateX(-100%);
+}
+.img-wrapper:hover > .content.slide-left{
+  transform: translateX(0);
+}
+
+/* #endregion */
+
+/* #region ANCHOR section 4 Emphasized Card img-wrapper */
+
+
+.e-card > .content:hover {
+ backdrop-filter: blur(10px);
+ 
+
+}
+
+
+.e-card > .content{
+
+
+background: rgba(49, 49, 49, 0.4);
+}
+
+.e-card > .content{
+transition: 200ms ease-in-out;
+}
+
+.e-card > .content.fade{
+  opacity: 0;
+}
+.e-card:hover > .content.fade{
+  opacity: 1;
+}
+
+.e-card > .content.slide-left{
+  transform: translateX(-30%);
+}
+.e-card:hover > .content.slide-left{
+  transform: translateX(0);
 }
 
 
 
-
+/* #endregion */
 
 .glow:hover {
   box-shadow: 0 0 10px 2px #fff, /* inner white */ 0 0 40px 1px #fcd867;
@@ -73,27 +142,36 @@
 }
 
 button:hover {
-  background-color: var(--primary-lighten);
+  
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 .icon:hover {
-  background-color: var(--primary-lighten);
+  filter: invert(100%);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.carousel-custom:hover{
+filter: brightness(125%);
+filter: saturate(150%);
+transition: all .3s ease-in-out;
+box-shadow: 0 0 20px 4px #ffce80
 }
 
 
 
 
 
+.fs-custom{
+  font-size: 60px;
+}
 
-
-/* SECTION MEDIA QU */
+/* SECTION MEDIA  */
 @media screen AND (max-width:768px) {
-
-
+  
+  
   .sm-hide {
     position: absolute;
     width: 1px;
@@ -105,14 +183,14 @@ button:hover {
     border: 0;
   }
   
-
+  
   .turkey-tail-card{
     width: 100vw;
   }
   .mobile-hide{
     display: none;
   }
-
+  
   /* NOTE OR GIVE MIN-height 64vh?? */
   .hero-image-2{
     height: fit-content;
@@ -122,15 +200,15 @@ button:hover {
     top: 0;
     left: 0;
   }
-
   
- .height-change{
-  height: fit-content;
+  
+  .height-change{
+    height: fit-content;
  }
-  
+ 
 }
 /* ANCHOR FIXES SCREEN OVERFLOW ON MOBILE */
- @media screen AND (max-width:1200px){
+@media screen AND (max-width:1200px){
   .over-spill{
     position: static;
     top: 0;
@@ -139,13 +217,13 @@ button:hover {
     
   }
   
+  
+}
 
- }
+/* #region ANCHOR @keyframes */
 
-
-
- /* SECTION Hero-Image Text */
- @keyframes bounceIn {
+/* SECTION Hero-Image Text */
+@keyframes bounceIn {
   0% {
     transform: scale(0.1);
     opacity: 0;
@@ -178,7 +256,7 @@ button:hover {
 }
 
 /* SECTION MUSHROOM ICON HEARTBEAT */
- @keyframes animateHeart {
+@keyframes animateHeart {
   0% {
     transform: scale(1.0);
   }
@@ -201,4 +279,8 @@ button:hover {
 .heart {
   animation: animateHeart 1.2s infinite;
 }
- 
+
+
+/* #endregion */
+
+
