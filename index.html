@@ -44,10 +44,10 @@
     }
   </style>
   <!-- //////////////////////////////////////////////////////////////////////////////////// -->
-  <!-- NOTE MARK CHECKPOINT AS PRIVATE
+ 
  <!-- TODO RENAME CHECKPOINT-1-->
-  <body class="">
-    
+  <body class="debug">
+    <!-- NOTE test div remove -->
       <!-- <div class="row">
         <div class="col-md-8 d-flex">
           
@@ -58,31 +58,64 @@
         </div>
       </div> -->
       
-      <!-- TODO ADD STICKY NAVBAR -->
-      <header class="  sticky-top bg-dark text-white  ">
-    <div class="container-fluid nav-image" >
+      <!-- TODO ADD STICKY NAVBAR  -->
+      <!-- NOTE sticky-top breaks modal moved out of navbar and fixed-->
+      <header class="  sticky-top bg-dark text-white navbar  ">
+       
+       
+
+       
+    <div class="container-fluid  navbar navbar-collapse" >
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       
-        <div class="d-flex align-items-center  px-3">
-          <i class="mdi mdi-mushroom fs-custom text-warning heart"></i>
+        <div class=" d-flex align-items-center  px-3 flex-sm-shrink-0">
+          <i class="mdi mdi-mushroom fs-custom  text-warning heart"></i>
         </div>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-        </ul>
+       
+        <!-- TESTING NAVBAR -->
+        
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" data-np-checked="1">
           <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" data-np-checked="1">
         </form>
 
-        <div class="text-end">
+        <div class="text-end pb-sm-3">
           <button type="button" class="btn text-warning mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Login
           </button>
-          <!--ANCHOR Modal -->
+          
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+        <!--SECTION NAVBAR -->
+        
+        <div class="collapse  " id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <div class="navbar-collapse  " id="myNavBar">
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#section1" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#section4" class="nav-link px-2 text-white">About</a></li>
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+    
+
+    <main>
+      <!--ANCHOR Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -121,21 +154,14 @@
     </div>
   </div>
 </div>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
-      </div>
-    </div>
-  </header>
-    
-
-    <main>
-      <!-- SECTION HERO-IMAGE -->
-      <section class="hero-image container-fluid py-5">
+      <!-- SECTION HERO-IMAGE/SECTION1 -->
+      <section id="section1" class="hero-image container-fluid py-5 ">
         <div class="row  justify-content-center p-3">
           <!-- ANCHOR FORM -->
-          <div class=" text-light ms-5 ps-5"> <h4>Want exclusive information?</h4></div>
+          <div class=" text-light ms-5 ps-5 bounce"> <h4>Want exclusive information?</h4></div>
           <div class="col-md-4">
-            <div class="card  shadow p-3 m-2">
+            <div class="card bounce  shadow p-3 m-2">
+              <!-- ANCHOR FORM -->
               <form>
                 <div class="mb-2"> 
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NAME"></div>
@@ -195,12 +221,12 @@
           <!-- ANCHOR HERO-IMAGE RIGHT TEXT -->
           <!-- TODO HIDE WHILE ON MOBILE -->
           <div
-            class="col-md-7 d-flex align-items-center justify-content-center "
+            class="col-md-7 d-flex align-items-center justify-content-center bounce"
           >
-            <div>
+          <!-- NOTE mobile-hide hides div once it's at a sm screen -->
+            <div class="mobile-hide">
               <!-- ANCHOR MOBILE-HIDE TEXT CHALLENGE -->
-              <!-- NOTE mobile-hide hides div once it's at a sm screen -->
-              <div class="text-over-image text-light mobile-hide d-flex shadow-lg">
+              <div class="text-over-image text-light  d-flex shadow-lg">
                 <div><i class="fa-solid fa-grip-lines-vertical fs-custom mx-4"></i></div>
                 <div class="text-shadow">
                   <h1>Mushrooms can Kill, Heal, and Feed you.</h1>
@@ -235,7 +261,7 @@
             </div>
           </div>
           <!-- ANCHOR OVER-SPILLING CARD/ACCORDION  -->
-          <div class="col-md-6 over-spill order-sm-0">
+          <div class="col-md-6 over-spill order-sm-0 float glow">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -318,8 +344,8 @@
       <section class="container-fluid p-5  hero-image-2 text-light ">
         <div class="row justify-content-between">
           <!-- ANCHOR TURKEY-TAIL-IMAGE -->
-          <div class=" col-md-3 d-flex justify-content-center turkey-tail ">
-            <div class="card  border border-4 border-warning  text-center" style="width: 18rem;">
+          <div class=" col-md-3 d-flex justify-content-center turkey-tail  ">
+            <div class="card turkey-tail-card border border-4 border-warning  text-center glow" >
               <img src="https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg" class="img-fluid rounded-1" alt="...">
               <div class="card-body">
                 <h4 class="card-text text-dark ">TurkeyTail Mushroom</h4>
@@ -327,7 +353,7 @@
             </div>
           </div>
           <div class="col-md-8 ">
-            <div class="row py-5 mt-5 ">
+            <div class="row py-5 mt-5 sm-hide ">
               <div class="col-md-9 ">
                 <!-- ANCHOR ICON -->
                 <div><i class="mdi mdi-dog fs-1"></i></div>
@@ -347,17 +373,17 @@
           </div>
           <!-- ANCHOR third row -->
           <div class="row mt-3 p-3 justify-content-end ">
-            <div class="col-md-12">
+            <div class="col-md-12 ">
               <div>
                 <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, saepe sit et natus est praesentium aliquam suscipit iusto? Quia provident sed quisquam quo tempore incidunt atque exercitationem suscipit, perspiciatis, architecto, explicabo cum doloremque sit ut in? Neque dolor exercitationem harum.</h6>
               </div>
             
             </div>
             </div>
-            <!-- ANCHOR FOURTH ICON ROW -->
-            <div class="row justify-content-end py-2">
+            <!-- ANCHOR FOURTH ICON  MORE BUTTON-->
+            <div class="row justify-content-end py-2 ">
 
-              <div class="col-md-3 m-2 d-flex justify-content-center">
+              <div class="col-md-3 m-2 d-flex justify-content-center ">
                 <div class="">
    
                   <button type="button" class="btn btn-warning fs-3 ">    <i class="mdi mdi-mushroom fs-1 text-dark "></i>MORE</button>
@@ -374,7 +400,7 @@
       <div class="row  ">
         <!-- FIRST CARD////////////////////////////////////////////////////////////// -->
         <!-- NOTE HERE is where i do the order challenge using JCC and Order -->
-        <div class=" col-md-4 d-flex align-items-center  justify-content-sm-center  order-sm-last order-md-first height-change">
+        <div class=" col-md-4 d-flex align-items-center  justify-content-sm-center  order-sm-last order-md-first ">
           <!-- OVER-FLOW HIDDEN -->
           <div class="card  card-cover gray-scale h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://lh4.ggpht.com/dAwzyxYVpIDE81ou8stLL4PimSEmylHeyVuvhv-m3awon6pbGf1rTxryPK8PADhuBQ7H1hTG0p2fj-BF6fA=s1200'); background-size: cover;">
             <div class="row  pt-4 justify-content-center ">
@@ -399,8 +425,8 @@
           </div>
         </div>
         <!-- ANCHOR EMPHASIZED CARD -->
-        <div class=" col-md-4 py-5 height-change">
-          <div class="card card-cover gray-scale h-100 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
+        <div class=" col-md-4 py-5 ">
+          <div class="card card-cover gray-scale height-change border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
               <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-moon fs-custom"></i></div>
             </div>
@@ -423,7 +449,7 @@
         </div>
         </div>
         <!-- THIRD CARD////////////////////////////////////////////////////////////////// -->
-        <div class="col-md-4 d-flex align-items-center justify-content-sm-center height-change pb-sm-5  ">
+        <div class="col-md-4 d-flex align-items-center justify-content-sm-center pb-sm-5  ">
           <!-- CHANGE the h-50 to manipulate it's relative height to emphasized -->
           <div class="card card-cover gray-scale  h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://free4kwallpapers.com/uploads/originals/2019/07/12/poisonous-red-mushroom-macro-wallpaper.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
@@ -451,7 +477,7 @@
     </main>
 
     <!-- SECTION Four -->
-<section class="container-fluid bg-warning text-light p-5">
+<section id="section4" class="container-fluid bg-warning text-light p-5">
   <div class="row justify-content-start">
     <div class="col-md-6">
       <div><h1>BLAHBLAHBLAH</h1></div>
@@ -463,40 +489,22 @@
     </div>
   </div>
   <!-- ANCHOR PEOPLE CARDS -->
-  <div class="row row-cols-1 row-cols-md-6 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="https://thispersondoesnotexist.com/" class="card-img-top" alt="...">
+  <div class="row row-cols-1 row-cols-md-6 g-4 pt-3">
+    
+    
+    <div class="col ">
+      <div class="card h-100 shadow">
+        <img src="https://thispersondoesnotexist.com/image" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title text-dark">Fake Name</h5>
+          <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nihil?.</p>
         </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="https://thispersondoesnotexist.xyz/" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+        <!-- ANCHOR PERSON CARD ICONS -->
+        <div class="card-footer text-dark fs-2 d-flex justify-content-evenly">
+          <div><i class="fa-brands fa-square-twitter icon"></i></div>
+          <div><i class="fa-brands fa-facebook icon"></i></div>
+          <div><i class="fa-brands fa-square-instagram icon"></i></div>
+          <div><i class="fa-brands fa-linkedin icon"></i></div>
         </div>
       </div>
     </div>
