@@ -59,14 +59,12 @@
       </div> -->
       
       <!-- TODO ADD STICKY NAVBAR -->
-      <header class=" p-3 bg-dark text-white ">
-    <div class="container-fluid">
+      <header class="  sticky-top bg-dark text-white  ">
+    <div class="container-fluid nav-image" >
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <div class="d-flex align-items-center  ">
-          <i class="mdi mdi-mushroom fs-1 text-warning"></i>
+      
+        <div class="d-flex align-items-center  px-3">
+          <i class="mdi mdi-mushroom fs-custom text-warning heart"></i>
         </div>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
@@ -81,7 +79,48 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn text-warning mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Login
+          </button>
+          <!--ANCHOR Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <!-- BODY -->
+      <div class="modal-body">
+        <div class="mb-3">
+                  
+              
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="EMAIL"
+          />
+         
+        </div>
+        <div class="mb-3">
+                  
+              
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            aria-describedby="emailHelp"
+            placeholder="PASSWORD"
+          />
+         
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
           <button type="button" class="btn btn-warning">Sign-up</button>
         </div>
       </div>
@@ -91,34 +130,37 @@
 
     <main>
       <!-- SECTION HERO-IMAGE -->
-      <section class="hero-image container-fluid">
+      <section class="hero-image container-fluid py-5">
         <div class="row  justify-content-center p-3">
           <!-- ANCHOR FORM -->
+          <div class=" text-light ms-5 ps-5"> <h4>Want exclusive information?</h4></div>
           <div class="col-md-4">
             <div class="card  shadow p-3 m-2">
               <form>
+                <div class="mb-2"> 
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NAME"></div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
+                  
+              
                   <input
                     type="email"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    placeholder="EMAIL"
                   />
-                  <div id="emailHelp" class="form-text">
+                  <div id="emailHelp" class="form-text text-center">
                     We'll never share your email with anyone else.
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
+                  
+                  
                   <input
-                    type="password"
+                    type="phone-number"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="phone-number"
+                    placeholder="PHONE"
                   />
                 </div>
                 <div class="mb-3 form-check">
@@ -128,7 +170,7 @@
                     id="exampleCheck1"
                   />
                   <label class="form-check-label" for="exampleCheck1"
-                    >I Like Anime</label
+                    >  Sign up for the News-Letter</label
                   >
                 </div>
                 <!-- ANCHOR form-check -->
@@ -141,16 +183,11 @@
                     checked
                   />
                   <label class="form-check-label" for="flexCheckChecked">
-                    Sign up for Japanese News-letters
+                  <h6>By checking this box i agree to the terms of the lorem ipsum dolor.</h6>
                   </label>
                 </div>
-                <div>
-                  <h4>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi, alias!
-                  </h4>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                
+                <button type="submit" class="btn btn-warning shadow">Submit</button>
               </form>
             </div>
           </div>
@@ -162,14 +199,19 @@
           >
             <div>
               <!-- ANCHOR MOBILE-HIDE TEXT CHALLENGE -->
-              <div class="text-over-image text-bg-dark mobile-hide">
-                <h1>Mushrooms can Kill, Heal, and Feed you.</h1>
+              <!-- NOTE mobile-hide hides div once it's at a sm screen -->
+              <div class="text-over-image text-light mobile-hide d-flex shadow-lg">
+                <div><i class="fa-solid fa-grip-lines-vertical fs-custom mx-4"></i></div>
+                <div class="text-shadow">
+                  <h1>Mushrooms can Kill, Heal, and Feed you.</h1>
+<h6>And strangely we are more related to them then we are to plans or to animals. </h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- SECTION TWO/SPILLING IMAGE -->
+      <!-- SECTION TWO/SPILLING IMAGE ACCORDION -->
       
       <section class="container-fluid bg-warning text-light">
         <div class="row justify-content-between p-4 position-relative">
@@ -192,25 +234,28 @@
               
             </div>
           </div>
-          <!-- ANCHOR OVER-SPILLING CARD -->
+          <!-- ANCHOR OVER-SPILLING CARD/ACCORDION  -->
           <div class="col-md-6 over-spill order-sm-0">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Amazing Medicinal Links and Articles
+                    
+                    
+                    <i class="fa-solid fa-stethoscope fs-4 mx-1"></i><h5>Amazing Medicinal Links and Articles</h5>
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    
+                    <strong>This  is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                 Famous Mycologist and their Work
+                    <i class="fa-solid fa-people-group fs-4 mx-1"></i><h5>Famous Mycologist and their Work</h5>
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -220,6 +265,7 @@
                     <div class="row p-2 justify-content-between ">
                       <div class="col-md-4">
                         <div><img src="https://s3.us-west-2.amazonaws.com/prod.retreat.guru/images/268717/slide/paul-stamets-e1547251971782.jpg" class="img-fluid rounded-5" alt="..."></div>
+                        <div class="text-center"><a href="https://en.wikipedia.org/wiki/Paul_Stamets" target="_blank" class="card-link">Wikipedia Page</a></div>
                         
                       </div>
                       <div class="col-md-7">
@@ -233,7 +279,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Great Mushroom Meals
+                    <i class="fa-solid fa-utensils fs-4 mx-1"></i><h5>Great Mushroom Meals</h5>
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -274,7 +320,7 @@
           <!-- ANCHOR TURKEY-TAIL-IMAGE -->
           <div class=" col-md-3 d-flex justify-content-center turkey-tail ">
             <div class="card  border border-4 border-warning  text-center" style="width: 18rem;">
-              <img src="https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg" class="img-fluid" alt="...">
+              <img src="https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg" class="img-fluid rounded-1" alt="...">
               <div class="card-body">
                 <h4 class="card-text text-dark ">TurkeyTail Mushroom</h4>
               </div>
@@ -330,7 +376,7 @@
         <!-- NOTE HERE is where i do the order challenge using JCC and Order -->
         <div class=" col-md-4 d-flex align-items-center  justify-content-sm-center  order-sm-last order-md-first height-change">
           <!-- OVER-FLOW HIDDEN -->
-          <div class="card  card-cover h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://lh4.ggpht.com/dAwzyxYVpIDE81ou8stLL4PimSEmylHeyVuvhv-m3awon6pbGf1rTxryPK8PADhuBQ7H1hTG0p2fj-BF6fA=s1200'); background-size: cover;">
+          <div class="card  card-cover gray-scale h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://lh4.ggpht.com/dAwzyxYVpIDE81ou8stLL4PimSEmylHeyVuvhv-m3awon6pbGf1rTxryPK8PADhuBQ7H1hTG0p2fj-BF6fA=s1200'); background-size: cover;">
             <div class="row  pt-4 justify-content-center ">
               <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-sun fs-custom"></i></div>
             </div>
@@ -354,7 +400,7 @@
         </div>
         <!-- ANCHOR EMPHASIZED CARD -->
         <div class=" col-md-4 py-5 height-change">
-          <div class="card card-cover h-100 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
+          <div class="card card-cover gray-scale h-100 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
               <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-moon fs-custom"></i></div>
             </div>
@@ -377,9 +423,9 @@
         </div>
         </div>
         <!-- THIRD CARD////////////////////////////////////////////////////////////////// -->
-        <div class="col-md-4 d-flex align-items-center justify-content-sm-center height-change pb-sm-5">
+        <div class="col-md-4 d-flex align-items-center justify-content-sm-center height-change pb-sm-5  ">
           <!-- CHANGE the h-50 to manipulate it's relative height to emphasized -->
-          <div class="card card-cover h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://free4kwallpapers.com/uploads/originals/2019/07/12/poisonous-red-mushroom-macro-wallpaper.jpg'); background-size: cover;">
+          <div class="card card-cover gray-scale  h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://free4kwallpapers.com/uploads/originals/2019/07/12/poisonous-red-mushroom-macro-wallpaper.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
               <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-sun fs-custom "></i></div>
             </div>
@@ -414,6 +460,45 @@
   <div class="row">
     <div class="col-12">
       <div><h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt enim voluptate.</h6></div>
+    </div>
+  </div>
+  <!-- ANCHOR PEOPLE CARDS -->
+  <div class="row row-cols-1 row-cols-md-6 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://thispersondoesnotexist.com/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://thispersondoesnotexist.xyz/" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -455,5 +540,6 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
