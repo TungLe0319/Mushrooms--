@@ -46,7 +46,7 @@
   <!-- //////////////////////////////////////////////////////////////////////////////////// -->
  
  <!-- TODO RENAME CHECKPOINT-1-->
-  <body class="debug">
+  <body class="">
     <!-- NOTE test div remove -->
       <!-- <div class="row">
         <div class="col-md-8 d-flex">
@@ -67,31 +67,37 @@
        
     <div class="container-fluid  navbar navbar-collapse" >
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      
-        <div class=" d-flex align-items-center  px-3 flex-sm-shrink-0">
+      <!-- ANCHOR Navigation Icon -->
+        <div class=" d-flex align-items-center  px-3 sm-hide">
           <i class="mdi mdi-mushroom fs-custom  text-warning heart"></i>
         </div>
        
-        <!-- TESTING NAVBAR -->
+       
         
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" data-np-checked="1">
           <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" data-np-checked="1">
         </form>
 
-        <div class="text-end pb-sm-3">
+        <!-- TODO put in col with nav items to flex on sm-screen -->
+
+        <div class="text-end pb-sm-3 col flex-row">
           <button type="button" class="btn text-warning mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Login
           </button>
           
-          <button type="button" class="btn btn-warning">Sign-up</button>
+          <button type="button" class="btn gold">Sign-up</button>
         </div>
         <!--SECTION NAVBAR -->
         
-        <div class="collapse  " id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
+        
+        <nav class="navbar  navbar-dark bg-dark" id="mainNav">
+          <div class="container mx-3">
+            <!--  -->
+<div class="" id="navbarToggleExternalContent">
+          <div class="bg-dark ms-4">
             <div class="navbar-collapse  " id="myNavBar">
-              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <ul class="navbar-nav col-12 flex-row col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#section1" class="nav-link px-2 text-secondary">Home</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
@@ -102,9 +108,8 @@
             </div>
           </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!--  -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
@@ -239,7 +244,7 @@
       </section>
       <!-- SECTION TWO/SPILLING IMAGE ACCORDION -->
       
-      <section class="container-fluid bg-warning text-light">
+      <section class="container-fluid gold text-light">
         <div class="row justify-content-between p-4 position-relative">
           <!-- ANCHOR ORDER challenge -->
           <div class="col-md-5 p-4 order-sm-1">
@@ -426,27 +431,30 @@
         </div>
         <!-- ANCHOR EMPHASIZED CARD -->
         <div class=" col-md-4 py-5 ">
-          <div class="card card-cover gray-scale height-change border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
-            <div class="row  pt-4 justify-content-center">
-              <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-moon fs-custom"></i></div>
-            </div>
-            <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, modi. Eveniet doloribus molestias similique.</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>TongueTwister</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>   <i class="mdi mdi-mushroom fs-1 text-light "></i></small>
-                </li>
-              </ul>
-            </div>
-        </div>
+          <div class="">
+
+            <div class="card card-cover gray-scale height-change border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
+              <div class="row  pt-4 justify-content-center">
+                <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-moon fs-custom"></i></div>
+              </div>
+              <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus!lorenm10 loremVelit, modi. Eveniet doloribus molestias similique.</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>TongueTwister</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>   <i class="mdi mdi-mushroom fs-1 text-light "></i></small>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          </div>
         </div>
         <!-- THIRD CARD////////////////////////////////////////////////////////////////// -->
         <div class="col-md-4 d-flex align-items-center justify-content-sm-center pb-sm-5  ">
@@ -477,7 +485,7 @@
     </main>
 
     <!-- SECTION Four -->
-<section id="section4" class="container-fluid bg-warning text-light p-5">
+<section id="section4" class="container-fluid gold text-light p-5">
   <div class="row justify-content-start">
     <div class="col-md-6">
       <div><h1>BLAHBLAHBLAH</h1></div>
@@ -493,11 +501,43 @@
     
     
     <div class="col ">
-      <div class="card h-100 shadow">
-        <img src="https://thispersondoesnotexist.com/image" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-dark">Fake Name</h5>
-          <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nihil?.</p>
+      <div class="text-center  h-100 rounded-bottom bg-transparent">
+        <img src="https://thispersondoesnotexist.com/image" class="card-img-top border border-5 rounded-circle shadow" alt="...">
+        <div class="card-body p-1 pt-sm-3">
+          <h5 class="card-title text-dark">Jane or Jane Doe</h5>
+          <p class="card-text text-dark">Bio... Credentials... Role... Passion.. </p>
+        </div>
+        <!-- ANCHOR PERSON CARD ICONS -->
+        <div class="card-footer text-dark fs-2 d-flex justify-content-evenly">
+          <div><i class="fa-brands fa-square-twitter icon"></i></div>
+          <div><i class="fa-brands fa-facebook icon"></i></div>
+          <div><i class="fa-brands fa-square-instagram icon"></i></div>
+          <div><i class="fa-brands fa-linkedin icon"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col ">
+      <div class="text-center  h-100 rounded-bottom bg-transparent">
+        <img src="https://thispersondoesnotexist.com/image" class="card-img-top border border-5 rounded-circle shadow" alt="...">
+        <div class="card-body p-1 pt-sm-3">
+          <h5 class="card-title text-dark">Jane or Jane Doe</h5>
+          <p class="card-text text-dark">Bio... Credentials... Role... Passion.. </p>
+        </div>
+        <!-- ANCHOR PERSON CARD ICONS -->
+        <div class="card-footer text-dark fs-2 d-flex justify-content-evenly">
+          <div><i class="fa-brands fa-square-twitter icon"></i></div>
+          <div><i class="fa-brands fa-facebook icon"></i></div>
+          <div><i class="fa-brands fa-square-instagram icon"></i></div>
+          <div><i class="fa-brands fa-linkedin icon"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col ">
+      <div class="text-center  h-100 rounded-bottom bg-transparent">
+        <img src="https://thispersondoesnotexist.com/image" class="card-img-top border border-5 rounded-circle shadow" alt="...">
+        <div class="card-body p-1 pt-sm-3">
+          <h5 class="card-title text-dark">Jane or Jane Doe</h5>
+          <p class="card-text text-dark">Bio... Credentials... Role... Passion.. </p>
         </div>
         <!-- ANCHOR PERSON CARD ICONS -->
         <div class="card-footer text-dark fs-2 d-flex justify-content-evenly">
