@@ -14,8 +14,8 @@
   background-attachment: fixed; 
 }
 .hero-image-2{
-  
-  height: 64vh;
+  /* ANCHOR test fit-content implace of 80vh */
+  height: fit-content;
   /* always scale the image to the appropriate size of your screen */
   background-size: cover;
   background-image: url(https://images6.alphacoders.com/110/1106343.jpg);
@@ -34,11 +34,7 @@
   background-attachment: fixed; 
 }
 
- .glow{
-   background-color: rgb(255, 115, 115) ;
-   transition: ease-in-out .3s;
-   box-shadow:0 0 30px red;
- }
+ 
 .over-spill{
   position: absolute;
   top: 80px;
@@ -55,11 +51,20 @@
     display: none;
   }
 
+  /* NOTE OR GIVE MIN-height 64vh?? */
+  .hero-image-2{
+    height: fit-content;
+  }
   .over-spill{
     position: static;
     top: 0;
     left: 0;
   }
+
+  
+ .height-change{
+  height: fit-content;
+ }
   
 }
 /* ANCHOR FIXES SCREEN OVERFLOW ON MOBILE */
@@ -72,4 +77,5 @@
     
   }
   
+
  }

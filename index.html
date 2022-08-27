@@ -46,7 +46,7 @@
   <!-- //////////////////////////////////////////////////////////////////////////////////// -->
   <!-- NOTE MARK CHECKPOINT AS PRIVATE
  <!-- TODO RENAME CHECKPOINT-1-->
-  <body class="debug">
+  <body class="">
     
       <!-- <div class="row">
         <div class="col-md-8 d-flex">
@@ -215,7 +215,18 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <!-- ANCHOR TEST  -->
+                  <div class="container">
+                    <div class="row p-2 justify-content-between ">
+                      <div class="col-md-4">
+                        <div><img src="https://s3.us-west-2.amazonaws.com/prod.retreat.guru/images/268717/slide/paul-stamets-e1547251971782.jpg" class="img-fluid rounded-5" alt="..."></div>
+                        
+                      </div>
+                      <div class="col-md-7">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ex, pariatur nesciunt numquam ducimus accusantium expedita, aperiam eius ab non libero cupiditate cum tempora velit dicta inventore! Perferendis asperiores quasi ipsum eligendi, quos voluptas excepturi nostrum sequi, laborum reprehenderit natus.</p>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -261,11 +272,11 @@
       <section class="container-fluid p-5  hero-image-2 text-light ">
         <div class="row justify-content-between">
           <!-- ANCHOR TURKEY-TAIL-IMAGE -->
-          <div class="col-md-3">
-            <div class="card border border-4 border-warning  text-center" style="width: 18rem;">
-              <img src="https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg" class="card-img-top img-fluid" alt="...">
+          <div class=" col-md-3 d-flex justify-content-center turkey-tail ">
+            <div class="card  border border-4 border-warning  text-center" style="width: 18rem;">
+              <img src="https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg" class="img-fluid" alt="...">
               <div class="card-body">
-                <h4 class="card-text text-dark">TurkeyTail Mushroom</h4>
+                <h4 class="card-text text-dark ">TurkeyTail Mushroom</h4>
               </div>
             </div>
           </div>
@@ -274,7 +285,7 @@
               <div class="col-md-9 ">
                 <!-- ANCHOR ICON -->
                 <div><i class="mdi mdi-dog fs-1"></i></div>
-                <div></div>
+                
               </div>
             </div>
             <!-- ANCHOR second row -->
@@ -294,24 +305,30 @@
               <div>
                 <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, saepe sit et natus est praesentium aliquam suscipit iusto? Quia provident sed quisquam quo tempore incidunt atque exercitationem suscipit, perspiciatis, architecto, explicabo cum doloremque sit ut in? Neque dolor exercitationem harum.</h6>
               </div>
+            
             </div>
-            <div class="col-md-3 m-2 d-flex justify-content-end">
-              <div class="">
- 
-                <button type="button" class="btn btn-warning fs-3 ">    <i class="mdi mdi-mushroom fs-1 text-dark "></i>MORE</button>
+            </div>
+            <!-- ANCHOR FOURTH ICON ROW -->
+            <div class="row justify-content-end py-2">
+
+              <div class="col-md-3 m-2 d-flex justify-content-center">
+                <div class="">
+   
+                  <button type="button" class="btn btn-warning fs-3 ">    <i class="mdi mdi-mushroom fs-1 text-dark "></i>MORE</button>
+                </div>
               </div>
             </div>
-          </div>
 
           </div>
         </div>
       </section>
       <!-- SECTION EMPHASIZED-CARD -->
       <!-- Add a line splitter here to ditinquish section? -->
-      <section class=" container-fluid hero-image-3 pt-5">
+      <section class=" container-fluid bg-dark p-5">
       <div class="row  ">
         <!-- FIRST CARD////////////////////////////////////////////////////////////// -->
-        <div class=" col-md-4 d-flex align-items-center ">
+        <!-- NOTE HERE is where i do the order challenge using JCC and Order -->
+        <div class=" col-md-4 d-flex align-items-center  justify-content-sm-center  order-sm-last order-md-first height-change">
           <!-- OVER-FLOW HIDDEN -->
           <div class="card  card-cover h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://lh4.ggpht.com/dAwzyxYVpIDE81ou8stLL4PimSEmylHeyVuvhv-m3awon6pbGf1rTxryPK8PADhuBQ7H1hTG0p2fj-BF6fA=s1200'); background-size: cover;">
             <div class="row  pt-4 justify-content-center ">
@@ -336,7 +353,7 @@
           </div>
         </div>
         <!-- ANCHOR EMPHASIZED CARD -->
-        <div class="col-md-4">
+        <div class=" col-md-4 py-5 height-change">
           <div class="card card-cover h-100 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
               <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-moon fs-custom"></i></div>
@@ -360,14 +377,14 @@
         </div>
         </div>
         <!-- THIRD CARD////////////////////////////////////////////////////////////////// -->
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-flex align-items-center justify-content-sm-center height-change pb-sm-5">
           <!-- CHANGE the h-50 to manipulate it's relative height to emphasized -->
           <div class="card card-cover h-75 border border-4 border-warning overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://free4kwallpapers.com/uploads/originals/2019/07/12/poisonous-red-mushroom-macro-wallpaper.jpg'); background-size: cover;">
             <div class="row  pt-4 justify-content-center">
-              <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-sun fs-custom"></i></div>
+              <div class="col-md-12 d-flex justify-content-center"><i class="fa-solid fa-sun fs-custom "></i></div>
             </div>
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+            <div class="d-flex flex-column h-100 p-5 text-shadow-1">
+              <h2 class="pt-5 pt-ms-0 mt-sm-0 mb-sm-0 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
                   <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
