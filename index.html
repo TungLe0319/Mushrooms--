@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkpoint-1</title>
+    <title>TheFungusAmongUs</title>
    
     <link rel="stylesheet" href="font-awesome-animation.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,16 +48,7 @@
 
  <!-- TODO RENAME CHECKPOINT-1-->
   <body class="debug">
-    <!-- NOTE test div remove -->
-      <!-- <div class="row">
-        <div class="col-md-8 d-flex">
-          
-          <div class="d-flex align-items-center ">
-            <i class="mdi mdi-mushroom fs-1 text-warning"></i>
-          </div>
-          <div class="d-flex align-items-center ps-3"><h1>Medicinal Mushrooms and Mycology</h1></div>
-        </div>
-      </div> -->
+    
       
       <!-- TODO ADD STICKY NAVBAR  -->
       <!-- NOTE sticky-top breaks modal moved out of navbar and fixed-->
@@ -68,7 +59,7 @@
             <div><div class=" col-md-2 d-flex align-items-center  d-flex align-content-center px-3 sm-hide">
           <i class="mdi mdi-mushroom fs-1  text-warning heart"></i>
         </div></div>
-            <a class="navbar-brand" href="#">Navbar </a>
+            <a class="navbar-brand" href="#">TheFungusAmongUs </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,10 +72,13 @@
                   <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Memberships</a>
+                  <a class="nav-link" href="#Quote">Quotes of the day</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -241,9 +235,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-9 d-flex justify-content-center p-5 p-sm-2" >
-            <div class="card bg-transparent border border-3 border-warning rounded-4">
-              <iframe width="551" height="535" src="https://www.youtube.com/embed/bxABOiay6oA?autoplay=1 " title="Fantastic Fungi, Official Film Trailer | Moving Art by Louie Schwartzberg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="rounded-4 " allowfullscreen></iframe>>
+          <div class="col-md-9 d-flex justify-content-center   p-3 mt-3" >
+            <div class="container video-box border border-3 border-warning rounded-4">
+              <!-- NOTE VIDEO -->
+              <iframe  src="https://www.youtube.com/embed/bxABOiay6oA " title="Fantastic Fungi, Official Film Trailer | Moving Art by Louie Schwartzberg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="rounded-4 responsive-iframe " allowfullscreen></iframe>>
             
             </div>
            
@@ -269,22 +264,31 @@
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     
-                    
+                  
                     <i class="fa-solid fa-stethoscope fs-4 mx-1"></i><h5>Amazing Medicinal Links and Articles</h5>
                   </button>
                 </h2>
+                <!-- NOTE Accordion 1 content -->
                 <div id="collapseOne" class="accordion-collapse collapse show bg-dark text-light" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body d-flex">
-                    <h5>Center for Consciousness Studies</h5> <i class="mdi mdi-arrow-right-thick"></i>
-                    <a href="#" class="link-light">https://consciousness.arizona.edu/</a>
-                  </div>
-                  <div class="accordion-body d-flex">
-                    <h5>National Library of Medicine</h5> <i class="mdi mdi-arrow-right-thick"></i>
-                    <a href="#" class="link-light">https://pubmed.ncbi.nlm.nih.gov/28605319/</a>
-                  </div>
-                  <div class="accordion-body d-flex">
-                    <h5>Research Finds Fungi Help Ease Climate Change and Benefit the Environment</h5> <i class="mdi mdi-arrow-right-thick"></i>
-                    <a href="#" class="link-dight">https://theemeraldmagazine.com/research-finds-fungi-help-ease-climate-change-and-benefit-the-environment/</a>
+                  <div class="accordion-body ">
+                    <div class="container-fluid">
+
+                      <h5>Center for Consciousness Studies</h5> 
+                      <!-- LINK -->
+                      <a href="#" class="link-light">https://consciousness.arizona.edu/</a>
+                      <div class="pt-3">
+                        <h5>National Library of Medicine</h5> 
+                        <!-- LINK -->
+                        <a href="#" class="link-light">https://pubmed.ncbi.nlm.nih.gov/28605319/</a>
+                      </div>
+
+                      <div class="pt-3">
+                        <h5>Research Finds Fungi Help Ease Climate Change and Benefit the Environment</h5> 
+                        <!-- LINK -->
+                        <a href="#" class="link-dight">https://theemeraldmagazine.com/research-finds-fungi-help-ease-climate-change-and-benefit-the-environment/</a>
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -300,6 +304,7 @@
                   <div class="container">
                     <div class="row p-2 justify-content-between ">
                       <div class="col-md-4">
+                        <!-- IMAGE -->
                         <div><img src="https://s3.us-west-2.amazonaws.com/prod.retreat.guru/images/268717/slide/paul-stamets-e1547251971782.jpg" class="img-fluid rounded-5" alt="..."></div>
                         <div class="text-center"><a href="https://en.wikipedia.org/wiki/Paul_Stamets" target="_blank" class="card-link">Wikipedia Page</a></div>
                         
@@ -320,7 +325,12 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse bg-dark text-light" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="d-flex justify-content-center">
+                      <img src="https://i.pinimg.com/564x/7b/2a/cc/7b2acc58a5d048f3cc6f7c14298dcdcf.jpg" href="https://www.pinterest.com/meljea8/mushroom-meals/" class="img-thumbnail" alt="..." width="300px" height="100px">
+
+                    </div>
+                    <p>Explore! Pinterest has a wide variety of all kinds of amazingly delicious, nutritious and Scrumpschulicious Mushroom focused meals</p>
+                    <div class="text-center"><a href="https://www.pinterest.com/meljea8/mushroom-meals/" target="_blank" class="card-link">Pinterest</a></div>
                   </div>
                 </div>
               </div>
@@ -378,7 +388,7 @@
             <div class="row py-5 mt-5 sm-hide ">
               <div class="col-md-9 ">
                 <!-- ANCHOR ICON -->
-                <div><i class="mdi mdi-dog fs-1"></i></div>
+                <div><i class="fa-solid fa-arrow-down-short-wide fs-custom heart"></i></div>
                 
               </div>
             </div>
@@ -387,7 +397,7 @@
             <div class="col-md-12 pt-3">
               <div>
                 <p class="placeholder-glow">
-                  <span class="placeholder col-12 p-3"></span>
+                  <span class="placeholder col-12 p-3 heart"></span>
                 </p>
                 
               </div>
@@ -428,7 +438,7 @@
           
           <div class="card  img-wrapper  card-cover gray-scale h-75 border border-4 border-warning  text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://lh4.ggpht.com/dAwzyxYVpIDE81ou8stLL4PimSEmylHeyVuvhv-m3awon6pbGf1rTxryPK8PADhuBQ7H1hTG0p2fj-BF6fA=s1200'); background-size: cover;">
            
-            <div class="d-flex flex-column h-100 p-3 pb-sm-5  text-shadow-1 content content-sm justify-content-center fade slide-left">
+            <div class="d-flex flex-column h-100 p-4 text-shadow-1 content content-sm justify-content-center fade slide-left">
               <h2 class=" display-6  lh-1 fw-bold content-sm">Fungi are the grand recyclers of the planet and the vanguard species in habitat restoration.
                 </h2><h2>© Paul Stamets</h2>
              
@@ -436,12 +446,12 @@
           </div>
         </div>
         <!-- ANCHOR EMPHASIZED CARD -->
-        <div class=" col-md-4 py-5 ">
+        <div id="Quote" class=" col-md-4 py-2 ">
         
             <div class=" card e-card card-cover gray-scale height-change border border-4  border-warning text-white bg-dark rounded-3 shadow-lg" style="background-image: url('https://i.pinimg.com/originals/03/20/90/03209095512dd5217fe8d2e964c632c2.jpg'); background-size: cover;">
              
               <div class="d-flex flex-column h-100 py-1 px-5 text-shadow-1 content  fade slide-left">
-                <h2 class="pt-md-5 mt-md-5 mb-md-4 display-6 lh-1 fw-bold content-sm">Nature doth thus kindly heal every wound. By the mediation of a thousand little mosses and fungi, the most unsightly objects become radiant of beauty. There seem to be two sides of this world, presented us at different times, as we see things in growth or dissolution, in life or death. And seen with the eye of the poet, as God sees them, all things are alive and beautiful.
+                <h2 class="p-4 display-6 lh-1 fw-bold content-sm">Nature doth thus kindly heal every wound. By the mediation of a thousand little mosses and fungi, the most unsightly objects become radiant of beauty. There seem to be two sides of this world, presented us at different times, as we see things in growth or dissolution, in life or death. And seen with the eye of the poet, as God sees them, all things are alive and beautiful.
                  </h2><h2> © 
                   Henry David Thoreau</h2>
                
@@ -462,11 +472,16 @@
         </div>
       </div>
       </section>
-    </main>
+      
 
-    <!-- SECTION Four -->
-<section id="section4" class="container-fluid gold text-light p-5">
-  <div class="row justify-content-start">
+
+
+
+
+
+      <!-- SECTION Four -->
+      <section id="about" class="container-fluid gold text-light p-5">
+        <div class="row justify-content-start">
     <div class="col-md-6 ">
       <div><h1>Hey Look some people Cards!</h1></div>
     </div>
@@ -482,7 +497,7 @@
     
     <div class="col ">
       <div class="text-center   h-100 rounded-bottom bg-transparent">
-        <img src="https://thispersondoesnotexist.com/image" class=" sm-half-size  card-img-top border border-5 rounded-circle shadow jane-doe" alt="...">
+        <img src="https://thispersondoesnotexist.com/image" class=" sm-half-size  card-img-top border border-5 rounded-circle shadow jane-doe heart-hover" alt="...">
         <div class="card-body p-1 pt-sm-3">
           <h5 class="card-title text-dark shadow rounded-5 p-1 mb-2 mx-sm-5">Jack or Jane Doe</h5>
           <p class="card-text text-dark">Bio... Credentials... Role... Passion.. </p>
@@ -498,32 +513,32 @@
     </div>
     <div class="col ">
       <div class="text-center  h-100 rounded-bottom bg-transparent">
-        <img src="https://thispersondoesnotexist.com/image" class="sm-half-size card-img-top border border-5 rounded-circle shadow jane-doe" alt="...">
+        <img src="https://thispersondoesnotexist.com/image" class="sm-half-size card-img-top border border-5 rounded-circle shadow jane-doe heart-hover" alt="...">
         <div class="card-body p-1 pt-sm-3">
           <h5 class="card-title text-dark shadow rounded-5 p-1 mb-2 mx-sm-5">Jack or Jane Doe</h5>
           <p class="card-text text-dark ">Bio... Credentials... Role... Passion.. </p>
         </div>
         <!-- ANCHOR PERSON CARD ICONS -->
         <div class="card-footer text-dark fs-2 d-flex justify-content-evenly justify-content-sm-center ">
-          <div><i class="fa-brands fa-square-twitter icon"></i></div>
-          <div><i class="fa-brands fa-facebook icon"></i></div>
-          <div><i class="fa-brands fa-square-instagram icon"></i></div>
+          <div><i class="fa-brands fa-square-twitter icon pe-sm-2"></i></div>
+          <div><i class="fa-brands fa-facebook icon pe-sm-2"></i></div>
+          <div><i class="fa-brands fa-square-instagram icon pe-sm-2"></i></div>
           <div><i class="fa-brands fa-linkedin icon"></i></div>
         </div>
       </div>
     </div>
     <div class="col ">
       <div class="text-center  h-100 rounded-bottom bg-transparent">
-        <img src="https://thispersondoesnotexist.com/image" class="sm-half-size card-img-top border border-5 rounded-circle shadow jane-doe" alt="...">
+        <img src="https://thispersondoesnotexist.com/image" class="sm-half-size card-img-top border border-5 rounded-circle shadow jane-doe heart-hover" alt="...">
         <div class="card-body p-1 pt-sm-3">
           <h5 class="card-title text-dark  shadow rounded-5 p-1 mb-2 mx-sm-5">Jake or Jane Doe</h5>
           <p class="card-text text-dark">Bio... Credentials... Role... Passion.. </p>
         </div>
         <!-- ANCHOR PERSON CARD ICONS -->
         <div class="card-footer text-dark fs-2 d-flex justify-content-evenly justify-content-sm-center ">
-          <div><i class="fa-brands fa-square-twitter icon"></i></div>
-          <div><i class="fa-brands fa-facebook icon"></i></div>
-          <div><i class="fa-brands fa-square-instagram icon"></i></div>
+          <div><i class="fa-brands fa-square-twitter icon pe-sm-2"></i></div>
+          <div><i class="fa-brands fa-facebook icon pe-sm-2"></i></div>
+          <div><i class="fa-brands fa-square-instagram icon pe-sm-2"></i></div>
           <div><i class="fa-brands fa-linkedin icon"></i></div>
         </div>
       </div>
@@ -531,8 +546,9 @@
   </div>
 </section>
 
-    
-    <footer class="container-fluid py-3  bg-dark text-light">
+</main>
+
+<footer class="container-fluid py-3  bg-dark text-light">
       <div class="row justify-content-center">
         <!-- ANCHOR ICON FOOTER -->
         <div class="col-md-3 d-flex justify-content-center m-3"><i class="fa-solid fa-sun fa-xl mb-2"></i></div>
@@ -547,7 +563,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
       </ul>
       <p class="text-center text-muted">© 2022 Company, Inc</p>
     </footer>
