@@ -14,6 +14,7 @@
   background-color: var(--primary);
 }
 
+
 .gray-scale:hover{
   transform: scale(1.025);
   
@@ -39,11 +40,13 @@
  
 .over-spill{
   position: absolute;
-  top: 80px;
+  top: 180px;
   left: 625px;
 }
 
-
+.logo-text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
 .jane-doe:hover{
@@ -59,7 +62,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-
+aspect-ratio: 1/1;
 object-fit: cover;
 background-position: center;
 
@@ -176,14 +179,16 @@ box-shadow: 0 0 20px 4px #ffce80
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
+     padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     border: 0;
   }
   
-  
+  .sm-half-size{
+    width: 50%;
+  }
   .turkey-tail-card{
     width: 100vw;
   }
@@ -206,6 +211,9 @@ box-shadow: 0 0 20px 4px #ffce80
     height: fit-content;
  }
  
+ .incease-height{
+  
+ }
 }
 /* ANCHOR FIXES SCREEN OVERFLOW ON MOBILE */
 @media screen AND (max-width:1200px){
