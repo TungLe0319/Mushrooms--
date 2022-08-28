@@ -4,6 +4,11 @@
 }
 :root {
   --primary: #fba41a;
+  --white:#e5e5e5;
+}
+
+.lighter-bg{
+  background-color: var(--white);
 }
 
 .gold {
@@ -19,6 +24,8 @@
 .turkey-tail-card {
   width: 18rem;
 }
+
+
 
 .hero-image {
   height: fit-content;
@@ -161,13 +168,17 @@ button:hover {
 
 /* SECTION MEDIA  */
 
-@media screen AND (max-width: 400px) {
-  .order-fix {
-    order: 0;
-  }
+@media screen AND (max-width: 500px) {
+ #section-2 .s-2-text{
+  order: 1;
+ }
+
+ #section-cards .first-little-card{
+  order: 1;
+ }
 }
 
-@media screen AND (max-width: 768px) {
+@media screen AND (max-width: 668px) {
   .video-box {
     width: 100vw;
     height: 40vh;
