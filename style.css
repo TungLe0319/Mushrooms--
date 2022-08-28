@@ -63,7 +63,7 @@
   overflow: hidden;
   width: 100%;
 aspect-ratio: 1/1;
-object-fit: cover;
+
 background-position: center;
 
 }
@@ -173,7 +173,11 @@ box-shadow: 0 0 20px 4px #ffce80
 
 /* SECTION MEDIA  */
 @media screen AND (max-width:768px) {
-  
+  .content-sm{
+    font-size: 20px;
+    position: static;
+    
+  }
   
   .sm-hide {
     position: absolute;
@@ -247,6 +251,7 @@ box-shadow: 0 0 20px 4px #ffce80
 .bounce {
   animation: bounceIn 2s;
 }
+
 
 /* SECTION FLOATING ACCORDIAN */
 @keyframes Float {
