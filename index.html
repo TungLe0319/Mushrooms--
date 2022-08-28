@@ -47,7 +47,7 @@
   <!-- //////////////////////////////////////////////////////////////////////////////////// -->
 
  <!-- TODO RENAME CHECKPOINT-1-->
-  <body class="debug">
+  <body class="">
     
       
       <!-- TODO ADD STICKY NAVBAR  -->
@@ -68,14 +68,12 @@
                 <li class="nav-item">
                   <a class="nav-link active " aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
+               
                 <li class="nav-item">
                   <a class="nav-link" href="#Quote">Quotes of the day</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">FAQs</a>
+                  <a class="nav-link" href="#end">FAQs</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
@@ -85,10 +83,10 @@
                     Store
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#"> Go ahead and put your card information here, totally no security risks.</a></li>
+                    <li><a class="dropdown-item" href="#">Deals of the Month</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Buy something or ELSE.</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -250,7 +248,7 @@
       <section class="container-fluid gold text-light">
         <div class="row justify-content-between p-4 position-relative">
           <!-- ANCHOR ORDER challenge -->
-          <div class="col-md-5 p-4 order-sm-1 ">
+          <div class="col-md-5 p-4 order-sm-1 order-md-0 ">
             <div><h1>WHO </h1><h1>WE ARE</h1><i class="fa-solid fa-arrow-down-long"></i></div>
             <div> <br> <h3>We open source</h3>
             <h4> <em>Knowledge about discoveries involving Fungi</em> </h4>
@@ -258,7 +256,7 @@
         <p> We possess a wide range of knowledge and technologies discovered by passionate and curious minds who've unlocked secrets and methods of using fungi to better not only the ecosystem but also our own daily lives and longevity.</p></div>
           </div>
           <!-- ANCHOR OVER-SPILLING CARD/ACCORDION  -->
-          <div class="col-md-6 over-spill order-sm-0 float ">
+          <div class="col-md-6 over-spill float ">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -487,8 +485,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
-      <div><h6>A really amazing sentence explaining why these people have cards and are worthy of having them pasted on this web-page!</h6></div>
+    <div class="col-12 py-3">
+      <div><h6> A really amazing sentence explaining why these people have cards and are worthy of having them pasted on this web-page!</h6></div>
     </div>
   </div>
   <!-- ANCHOR PEOPLE CARDS -->
@@ -546,9 +544,33 @@
   </div>
 </section>
 
+
+<!-- SECTION FAQ -->
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 p-5">
+      <form class="">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">How can we help you?</label>
+          <input type="email" class="form-control"aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">W?hat more can you do to improve access to  our information?</label>
+          <input type="password" class="form-control p-4" >
+        </div>
+        <div class="mb-3 form-check">
+          <button type="submit" class="btn btn-warning">Submit</button>
+          
+        </div>
+       
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="container-fluid py-3  bg-dark text-light">
+<footer  id="end" class="container-fluid py-3  bg-dark text-light">
       <div class="row justify-content-center">
         <!-- ANCHOR ICON FOOTER -->
         <div class="col-md-3 d-flex justify-content-center m-3"><i class="fa-solid fa-sun fa-xl mb-2"></i></div>
@@ -560,7 +582,7 @@
       </div>
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
         <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>

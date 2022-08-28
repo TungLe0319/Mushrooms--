@@ -1,100 +1,86 @@
-*{
+* {
   font-family: 'Oswald', sans-serif;
-/* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
 }
-:root{
-  --primary:#fba41a;
+:root {
+  --primary: #fba41a;
 }
 
-
-
-
-
-.gold{
+.gold {
   background-color: var(--primary);
 }
 
-
-.gray-scale:hover{
+.gray-scale:hover {
   transform: scale(1.025);
-  
-  transition: all 0.25s  ease-in;
- 
+
+  transition: all 0.25s ease-in;
 }
 
-.turkey-tail-card{
-  width: 18rem
+.turkey-tail-card {
+  width: 18rem;
 }
 
-.hero-image{
-  
+.hero-image {
   height: fit-content;
   /* always scale the image to the appropriate size of your screen */
   background-size: cover;
   background-image: url(https://images6.alphacoders.com/110/1106343.jpg);
   background-position: center;
   /* keeps the image fixed while scrolling , neat effect. */
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
- 
-.over-spill{
+.over-spill {
   position: absolute;
   top: 180px;
   left: 625px;
 }
 
-.logo-text{
+.logo-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-.jane-doe:hover{
+.jane-doe:hover {
   filter: brightness(80%);
   transition: all 0.5s ease;
 }
 
 /* #region ANCHOR SECTION 4 img-wrapper */
 
-
-
-.img-wrapper{
+.img-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-aspect-ratio: 1/1;
+  aspect-ratio: 1/1;
 
-background-position: center;
-
+  background-position: center;
 }
 .img-wrapper > .content:hover {
- backdrop-filter: blur(1rem);
- 
-
+  backdrop-filter: blur(1rem);
 }
 
-
-.img-wrapper > .content{
-position: absolute;
-inset: 0;
-background: rgba(49, 49, 49, 0.4);
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  background: rgba(49, 49, 49, 0.4);
 }
 
-.img-wrapper, .img-wrapper > .content{
-transition: 200ms ease-in-out;
+.img-wrapper,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
 }
 
-.img-wrapper > .content.fade{
+.img-wrapper > .content.fade {
   opacity: 0;
 }
-.img-wrapper:hover > .content.fade{
+.img-wrapper:hover > .content.fade {
   opacity: 1;
 }
 
-.img-wrapper > .content.slide-left{
+.img-wrapper > .content.slide-left {
   transform: translateX(-100%);
 }
-.img-wrapper:hover > .content.slide-left{
+.img-wrapper:hover > .content.slide-left {
   transform: translateX(0);
 }
 
@@ -102,43 +88,35 @@ transition: 200ms ease-in-out;
 
 /* #region ANCHOR section 4 Emphasized Card img-wrapper */
 
-
 .e-card > .content:hover {
- backdrop-filter: blur(10px);
- 
-
+  backdrop-filter: blur(10px);
 }
 
-
-.e-card > .content{
-
-
-background: rgba(49, 49, 49, 0.4);
+.e-card > .content {
+  background: rgba(49, 49, 49, 0.4);
 }
 
-.e-card > .content{
-transition: 200ms ease-in-out;
+.e-card > .content {
+  transition: 200ms ease-in-out;
 }
 
-.e-card > .content.fade{
+.e-card > .content.fade {
   opacity: 0;
 }
-.e-card:hover > .content.fade{
+.e-card:hover > .content.fade {
   opacity: 1;
 }
 
-.e-card > .content.slide-left{
+.e-card > .content.slide-left {
   transform: translateX(-30%);
 }
-.e-card:hover > .content.slide-left{
+.e-card:hover > .content.slide-left {
   transform: translateX(0);
 }
 
-
-
 /* #endregion */
 
-.video-box{
+.video-box {
   position: relative;
   width: 90vw;
   height: 80vh;
@@ -155,12 +133,11 @@ transition: 200ms ease-in-out;
 
 .glow:hover {
   box-shadow: 0 0 10px 2px #fff, /* inner white */ 0 0 40px 1px #fcd867;
-  
+
   transition: all 0.5s ease;
 }
 
 button:hover {
-  
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -171,88 +148,78 @@ button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.carousel-custom:hover{
-filter: brightness(125%);
-filter: saturate(150%);
-transition: all .3s ease-in-out;
-box-shadow: 0 0 20px 4px #ffce80
+.carousel-custom:hover {
+  filter: brightness(125%);
+  filter: saturate(150%);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px 4px #ffce80;
 }
 
-
-
-
-
-.fs-custom{
+.fs-custom {
   font-size: 60px;
 }
 
 /* SECTION MEDIA  */
-@media screen AND (max-width:768px) {
 
-  .video-box{
-  
+@media screen AND (max-width: 400px) {
+  .order-fix {
+    order: 0;
+  }
+}
+
+@media screen AND (max-width: 768px) {
+  .video-box {
     width: 100vw;
     height: 40vh;
   }
 
-
-  .content-sm{
+  .content-sm {
     font-size: 20px;
     position: static;
-    
   }
-  
+
   .sm-hide {
     position: absolute;
     width: 1px;
     height: 1px;
-     padding: 0;
+    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     border: 0;
   }
-  
-  .sm-half-size{
+
+  .sm-half-size {
     width: 50%;
   }
-  .turkey-tail-card{
+  .turkey-tail-card {
     width: 100vw;
   }
-  .mobile-hide{
+  .mobile-hide {
     display: none;
   }
-  
+
   /* NOTE OR GIVE MIN-height 64vh?? */
-  .hero-image-2{
+  .hero-image-2 {
     height: fit-content;
   }
-  .over-spill{
+  .over-spill {
     position: static;
     top: 0;
     left: 0;
   }
-  
-  
-  .height-change{
+
+  .height-change {
     height: fit-content;
- }
- 
- .incease-height{
-  
- }
+  }
 }
 /* ANCHOR FIXES SCREEN OVERFLOW ON MOBILE */
-@media screen AND (max-width:1200px){
-  .over-spill{
+@media screen AND (max-width: 1200px) {
+  .over-spill {
     position: static;
     top: 0;
     left: 0;
-    
-    
   }
-  
-  
 }
 
 /* #region ANCHOR @keyframes */
@@ -275,7 +242,6 @@ box-shadow: 0 0 20px 4px #ffce80
   animation: bounceIn 2s;
 }
 
-
 /* SECTION FLOATING ACCORDIAN */
 @keyframes Float {
   0%,
@@ -283,7 +249,7 @@ box-shadow: 0 0 20px 4px #ffce80
     transform: translateY(-5px);
   }
   50% {
-    transform: translateY(5px) ;
+    transform: translateY(5px);
   }
 }
 
@@ -294,10 +260,10 @@ box-shadow: 0 0 20px 4px #ffce80
 /* SECTION MUSHROOM ICON HEARTBEAT */
 @keyframes animateHeart {
   0% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
   5% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
   10% {
     transform: scale(0.85);
@@ -306,20 +272,18 @@ box-shadow: 0 0 20px 4px #ffce80
     transform: scale(0.85);
   }
   50% {
-    transform: scale(1.0);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.);
+    transform: scale(1);
   }
 }
 .heart {
   animation: animateHeart 1.2s infinite;
 }
 
-.heart-hover:hover{
+.heart-hover:hover {
   animation: animateHeart 1.2s infinite;
 }
 
 /* #endregion */
-
-
