@@ -4,10 +4,10 @@
 }
 :root {
   --primary: #fba41a;
-  --white:#e5e5e5;
+  --white: #e5e5e5;
 }
 
-.lighter-bg{
+.lighter-bg {
   background-color: var(--white);
 }
 
@@ -24,8 +24,6 @@
 .turkey-tail-card {
   width: 18rem;
 }
-
-
 
 .hero-image {
   height: fit-content;
@@ -169,13 +167,13 @@ button:hover {
 /* SECTION MEDIA  */
 
 @media screen AND (max-width: 500px) {
- #section-2 .s-2-text{
-  order: 1;
- }
+  #section-2 .s-2-text {
+    order: 1;
+  }
 
- #section-cards .first-little-card{
-  order: 1;
- }
+  #section-cards .first-little-card {
+    order: 1;
+  }
 }
 
 @media screen AND (max-width: 668px) {
